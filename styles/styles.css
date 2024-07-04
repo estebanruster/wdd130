@@ -1,26 +1,52 @@
 nav {
-    background-color: steelblue;
-    padding: 10px;
-  }
+  background-color: steelblue;
+  padding: 10px;
+}
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-  }
+  color: white;
+  display: block;
+  padding: 20px;
+}
 
 h1 {
-    color: steelblue;
-  }
+  color: steelblue;
+}
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-  }
+main img {
+  height: auto;
+  width: 150px;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
 
 p {
-    padding: 10px;
-  }
+  padding: 0;
+}
+
+main {
+  max-width: 900px;
+}
+
+aside {
+  max-width: 200px;
+  margin: 1rem;
+  border: 1px solid rgba(0 0 0 / 0.2);
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: rgba(103 203 171 / 0.2);
+  color: black;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 2px solid black;
+  text-align: center;
+}
