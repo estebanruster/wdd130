@@ -1,0 +1,75 @@
+/*
+WDD130: Web Fundamentals
+w03 Rafting Project: About Us Page
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Inconsolata:wght@200..900&display=swap');
+
+:root {
+    --primary-color: #5B5148;
+    --secondary-color: #67CBAB;
+    --accent1-color: #DAE6E7;
+    --accent2-color: #203283;
+    --heading-font: alkatra, serif;
+    --paragraph-font: inconsolata, serif;
+    --nav-background-color: #67CBAB;
+    --nav-link-color: #5b5148;
+    --nav-hover-link-color: #DAE6E7;
+    --nav-hover-background-color: #203283;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 1000px;
+    background-color: var(--accent1-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    /* color: var(--accent2-color); */
+    color: black;
+    padding: 25px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    right: 380px;
+    /* text-shadow: 0 0 5px var(--accent1-color); */
+    background-color: rgba(218 230 231 / 0.7);
+}
+
+article {
+    position: absolute;
+    width: 800px;
+    top: 280px;
+    right: 100px;
+    background-color: rgba(103 203 171 / 0.6) /*var(--secondary-color)*/;
+    text-shadow: 0 0 5px white;
+    font-weight: bold;
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    
+}
