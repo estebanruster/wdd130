@@ -4,7 +4,7 @@
   box-sizing: border-box;
 } 
 
-nav {
+header {
   background-color: steelblue;
   padding: 10px;
 }
@@ -33,9 +33,9 @@ main img {
   float: right;
 }
 
-main {
+/* main {
   max-width: 900px;
-}
+} */
 
 aside {
   max-width: 200px;
@@ -63,6 +63,12 @@ footer {
   margin-top: 3rem;
   border-top: 2px solid black;
   text-align: center;
+}
+
+header,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 /* Class Selectors */
