@@ -61,7 +61,7 @@ label{
 }
 
 input, select, textarea{
-    /* padding: 1px; */
+    padding: 1.6px;
     font-size: 1.05rem;
 }
 
