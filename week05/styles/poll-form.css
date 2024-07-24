@@ -1,0 +1,108 @@
+/*
+Author: Esteban Rubén Mangas Calva
+WDD130: Web Fundamentals
+W05 Learning Activity: CSS Form Styling
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Titillium Web, sans-serif, arial;
+    background-color: rgb(102 248 218 / 0.2);
+}
+
+header > h1{
+    text-align: center;
+    /* border: solid 1px black; */
+    padding: 10px;
+    width: 600px;
+    margin: auto;
+}
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(102 248 218 / 0.6);
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+legend{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(106, 12, 130);
+}
+
+label.right{
+    text-align: left;
+}
+
+label{
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input, select, textarea{
+    /* padding: 1px; */
+    font-size: 1.05rem;
+}
+
+input[type="checkbox"]{
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 1.1rem;
+    background-color: rgb(244, 222, 181);
+}
+
+button:hover{
+    background-color: rgb(8, 160, 242);
+    color: white;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    width: 650px;
+    margin-top: 20px;
+    border-top: solid 2px black;
+    font-size: 0.9rem;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    /* margin: auto; */
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
