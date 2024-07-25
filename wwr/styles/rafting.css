@@ -142,11 +142,11 @@ p {
     padding: 25px;
 }
 
-.hero-index,
+.heroindex,
 .hero {
     position: relative;
 }
-.hero-index img,
+.heroindex img,
 .hero img {
     display: block;
     width: 100%;
