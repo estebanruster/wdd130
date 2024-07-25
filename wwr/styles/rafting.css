@@ -54,13 +54,15 @@ header.grid-container {
     font-weight: bold;
     font-size: 1.1rem;
 }
-
+.action-consult:link,
+.action-consult:link,
 .grid-container nav a:link,
 .grid-container nav a:visited {
     color: var(--nav-link-color);
 }
-  
-.grid-container nav a:hover {
+
+.action-consult:hover,
+.grid-container nav a:hover{
     color: white;
     background-color: var(--nav-hover-background-color);
 }
@@ -175,7 +177,7 @@ article {
 }
 
 div{
-    background-color: rgba(103 203 171);
+    background-color: var(--secondary-color);
 }
 
 div.company{
@@ -243,6 +245,64 @@ figure.image3{
     width: 150px;
     padding: 0;
     margin: auto;
+}
+
+.package{
+    background-color: var(--accent1-color);
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.package img{
+    display: block;
+    width: auto;
+    height: 200px;
+    margin: auto;
+}
+
+.action-consult{
+    display: block;
+    background-color: var(--nav-background-color);
+    border: solid 1px black;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 520px;
+}
+
+.highlight{
+    padding-bottom: 20px;
+}
+
+.trips{
+    display: grid;
+    grid-template-areas: 
+    "header table"
+    "image table";
+    margin-top: 10px;
+    gap: 20px;
+    justify-items: center;
+}
+
+.trips h1{
+    grid-area: header;
+    text-align: center;
+}
+
+.trips img{
+    width: 200px;
+    grid-area: image;
+    padding: 10px;
+}
+
+.trips table{
+    grid-area: table;
 }
 
 footer {
@@ -333,4 +393,34 @@ button:hover{
     grid-template-columns: 1fr 2fr;
 }
 
-/*Contact us */
+/*Table style*/
+table{
+    border-collapse: collapse;
+    border: 3px solid var(--primary-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: var(--accent1-color);
+    margin: 20px;
+}
+
+caption{
+    caption-side: bottom;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0;
+}
+
+thead{
+  background-color: rgb(32 50 131 / 0.3);
+}
+
+th,
+td {
+  border: 1.5px solid var(--primary-color);
+  padding: 8px 10px;
+}
+
+tbody > tr:nth-of-type(even){
+    background-color: rgb(102 248 218 / 0.5);
+}
