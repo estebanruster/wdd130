@@ -142,10 +142,11 @@ p {
     padding: 25px;
 }
 
+.hero-index,
 .hero {
     position: relative;
 }
-
+.hero-index img,
 .hero img {
     display: block;
     width: 100%;
@@ -175,6 +176,18 @@ article {
     width: 200px;
     
 }
+
+.index{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    width: 600px;
+    margin: auto;
+ }
 
 div{
     background-color: var(--secondary-color);
@@ -253,6 +266,11 @@ figure.image3{
     padding: 0;
     display: flex;
     /* justify-content: space-around; */
+}
+
+.reverse{
+    flex-direction: row-reverse;
+    text-align: right;
 }
 
 .package img{
