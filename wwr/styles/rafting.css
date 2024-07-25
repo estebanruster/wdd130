@@ -12,7 +12,7 @@ w03 Rafting Project: About Us Page
     --accent2-color: #203283;
     --heading-font: alkatra, serif;
     --paragraph-font: inconsolata, serif;
-    --nav-background-color: #67CBAB;
+    --nav-background-color: rgba(103 203 171 / 0.6);
     --nav-link-color: #5b5148;
     --nav-hover-link-color: #DAE6E7;
     --nav-hover-background-color: #203283;
@@ -51,6 +51,8 @@ header.grid-container {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .grid-container nav a:link,
@@ -59,7 +61,7 @@ header.grid-container {
 }
   
 .grid-container nav a:hover {
-    color: var(--nav-hover-link-color);
+    color: white;
     background-color: var(--nav-hover-background-color);
 }
 
@@ -172,6 +174,77 @@ article {
     
 }
 
+div{
+    background-color: rgba(103 203 171);
+}
+
+div.company{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 10px;
+    gap: 0;
+}
+
+div.company h1{
+    grid-column: 1/9;
+}
+
+div.company ul{
+    grid-row: 2/6;
+    grid-column: 1/4;
+    margin: auto;
+}
+
+div.map{
+    grid-row: 2/6;
+    grid-column: 4/9;
+    margin: auto;
+}
+
+div.map h2{
+    margin: 0;
+    text-align: center;
+}
+
+iframe{
+    width: 300px;
+    height:300px;
+}
+
+div.staff{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "image1 image2 image3";
+    margin-top: 10px;
+}
+
+div.staff h1{
+    grid-area: header;
+}
+
+figure.image1{
+    grid-area: image1;
+    width: 150px;
+    padding: 0;
+    margin: auto;
+}
+
+figure.image2{
+    grid-area: image2;
+    width: 150px;
+    padding: 0;
+    margin: auto;
+}
+
+figure.image3{
+    grid-area: image3;
+    width: 150px;
+    padding: 0;
+    margin: auto;
+}
+
 footer {
     background-color: white;
     border: solid 1px black;
@@ -184,3 +257,80 @@ footer a {
     align-self: center;
     text-decoration: none;
 }
+
+/*Form style*/
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(102 248 218 / 0.6);
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+legend{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(106, 12, 130);
+}
+
+label.right{
+    text-align: left;
+}
+
+label{
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input, select, textarea{
+    padding: 1.6px;
+    font-size: 1.05rem;
+}
+
+input[type="checkbox"]{
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+}
+
+button{
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 1.1rem;
+    background-color: rgb(244, 222, 181);
+}
+
+button:hover{
+    background-color: rgb(8, 160, 242);
+    color: white;
+}
+
+.form-item{
+    display: grid;
+    align-items: center;
+}
+
+.column1{
+    grid-template-columns: 3fr 1fr;
+    /* margin: auto; */
+}
+
+.column2{
+    grid-template-columns: 1fr 2fr;
+}
+
+/*Contact us */

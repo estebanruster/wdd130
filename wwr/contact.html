@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+WDD130: Web Fundamentals
+w03 Rafting Project: Contact Us Page
+-->
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Esteban Mangas | Rafting Project: Contact Us Page - Whitewater Rafting</title>
+        <meta name="description" content="Contact Us Web page for the Whitewater Rafting Web site with contact info and a form to request more information.">
+        <meta name="author" content="Esteban Rubén Mangas Calva">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header class="grid-container">
+            <img src="images/logo.png" alt="Whitewater Rafting Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div class="company">
+                <h1>Company information</h1>
+                <ul>
+                    <li>Address: Jalcomulco, Veracruz. Río la Antigua.</li>
+                    <li>Phone Number: +52 228 xxxxxxx</li>
+                    <li>E-mail: whitewater_rafting_antigua@gmail.com</li>
+                </ul>
+                <div class="map">
+                    <h2>Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3764.906093994107!2d-96.77320464550783!3d19.329880759681696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE5JzQ3LjkiTiA5NsKwNDYnMjEuMSJX!5e0!3m2!1ses-419!2smx!4v1721845560683!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="staff">
+                <h1>Our Staff</h1>
+                <figure class="image1">
+                    <img src="images/staff1.jpg" alt="Photo of the Head Guide" width="150">
+                    <figcaption>Head Guide and expert rafting of La Antigua River.</figcaption>
+                </figure>
+                <figure class="image2">
+                    <img src="images/staff2.jpg" alt="Photo of the instructor of rookies" width="150">
+                    <figcaption>Guide and instructor of rookies.</figcaption>
+                </figure>
+                <figure class="image3">
+                    <img src="images/staff3.jpg" alt="Photo of the safety leader" width="150">
+                    <figcaption>Security and safety leader.</figcaption>
+                </figure>
+            </div>
+            <div class="form">
+                <h1>Want to know more? Send a message</h1>
+                <form>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-item column2">
+                            <label for="fullname">Full name</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
+                        <div class="form-item column2">
+                            <label for="useremail">E-mail</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is the purpose of the message?</legend>
+                        <div class="form-item column1">
+                            <label for="inquiry">General Inquiry</label>
+                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                        <!-- </div> -->
+                        <!-- <div class="form-item column1"> -->
+                            <label for="question">Reservation Question</label>
+                            <input type="radio" id="question" name="purpose" value="Reservation Question">
+                        <!-- </div> -->
+                        <!-- <div class="form-item column1"> -->
+                            <label for="suggestion">Website Suggestion</label>
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Message</legend>
+                        <div class="form-item">
+                            <label for="places" class="right">Please write your message.</label>
+                            <textarea id="places" name="places" rows="3" placeholder="Oaxaca México, Querétaro México, London England"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="form-item column1">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;2024 | Whitewater Rafting | Esteban Mangas</p>
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter-icon.png" alt="Twitter icon"></a>
+            <a href="https://wireframe.cc/2DmXMs">wireframe</a>
+        </footer>
+    </body>
+</html>
